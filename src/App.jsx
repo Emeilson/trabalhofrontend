@@ -7,6 +7,7 @@ import Footer from './Footer.jsx'
 import ListaAlunos from './ListaAlunos.jsx'
 import Alerta from './Alerta.jsx'
 import Acoes from './Acoes.jsx'
+import CartaoPerfil from './CartaoPerfil.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +39,13 @@ function App() {
         <Acoes texto="Salvar" />
         <Acoes texto="Cancelar" />
         <Acoes texto="Excluir" />
+      </div>
+      <div>
+        <CartaoPerfil nome="Pedro" idade={21} profissao="Estudante" />
+        <CartaoPerfil nome="Maria" idade={22} profissao="Estudante" />
+        <CartaoPerfil nome="Joana" idade={20} profissao="Estudante" />
+        <CartaoPerfil nome="Carlos" idade={23} profissao="Estudante" />
+        <CartaoPerfil nome="Julia" idade={21} profissao="Estudante" />
       </div>
       </div>
       <h1>Boas vindas Pedro</h1>
