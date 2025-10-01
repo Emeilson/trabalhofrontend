@@ -2,6 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './Header.jsx'
+import Footer from './Footer.jsx'
+import ListaAlunos from './ListaAlunos.jsx'
+import Alerta from './Alerta.jsx'
+import Acoes from './Acoes.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,11 +20,30 @@ function App() {
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
+       <div>
+        <Header />
+        </div>
+        <div>
+         <Footer />
+        </div>
+       <div>
+        <ListaAlunos />
       </div>
-      <h1>Vite + React</h1>
+      <div>
+        <Alerta tipo="sucesso" />
+        <Alerta tipo="erro" />
+        <Alerta tipo="info" />
+      </div>
+      <div>
+        <Acoes texto="Salvar" />
+        <Acoes texto="Cancelar" />
+        <Acoes texto="Excluir" />
+      </div>
+      </div>
+      <h1>Boas vindas Pedro</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          Você clicou {count} vezes
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
