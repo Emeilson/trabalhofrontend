@@ -32,9 +32,11 @@ function App() {
         <ListaAlunos />
       </div>
       <div>
-        <Alerta tipo="sucesso" />
-        <Alerta tipo="erro" />
-        <Alerta tipo="info" />
+        <CartaoPerfil nome="Pedro" idade={21} profissao="Estudante" />
+        <CartaoPerfil nome="Maria" idade={22} profissao="Estudante" />
+        <CartaoPerfil nome="Joana" idade={20} profissao="Estudante" />
+        <CartaoPerfil nome="Carlos" idade={23} profissao="Estudante" />
+        <CartaoPerfil nome="Julia" idade={21} profissao="Estudante" />
       </div>
       <div>
         <Acoes texto="Salvar" />
@@ -42,11 +44,9 @@ function App() {
         <Acoes texto="Excluir" />
       </div>
       <div>
-        <CartaoPerfil nome="Pedro" idade={21} profissao="Estudante" />
-        <CartaoPerfil nome="Maria" idade={22} profissao="Estudante" />
-        <CartaoPerfil nome="Joana" idade={20} profissao="Estudante" />
-        <CartaoPerfil nome="Carlos" idade={23} profissao="Estudante" />
-        <CartaoPerfil nome="Julia" idade={21} profissao="Estudante" />
+        <Alerta tipo="sucesso" />
+        <Alerta tipo="erro" />
+        <Alerta tipo="info" />
       </div>
       </div>
       <div className="card">
