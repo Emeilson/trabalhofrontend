@@ -24,6 +24,7 @@ function App() {
        <div>
         <Header />
         </div>
+        <h1>Boas vindas Pedro</h1>
         <div>
          <Footer />
         </div>
@@ -48,18 +49,11 @@ function App() {
         <CartaoPerfil nome="Julia" idade={21} profissao="Estudante" />
       </div>
       </div>
-      <h1>Boas vindas Pedro</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           Você clicou {count} vezes
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
